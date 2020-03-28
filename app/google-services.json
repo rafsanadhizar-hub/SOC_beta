@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "527098843466",
+    "firebase_url": "https://shareourcar-46fd4.firebaseio.com",
+    "project_id": "shareourcar-46fd4",
+    "storage_bucket": "shareourcar-46fd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527098843466:android:48f40a5c17e6f8929271b3",
+        "android_client_info": {
+          "package_name": "com.example.soc_beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527098843466-439tatv7ofma5jjv4bf9k3suirrr2b0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.soc_beta",
+            "certificate_hash": "bbb32d2753312fd346b81fa545a859b3fedab0d9"
+          }
+        },
+        {
+          "client_id": "527098843466-t2a97bbpj26o2g9q1urjll9qfhehtqft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADVX69P8UaUMBZ26eFU-gGHSQ2RFX7S2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527098843466-t2a97bbpj26o2g9q1urjll9qfhehtqft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
