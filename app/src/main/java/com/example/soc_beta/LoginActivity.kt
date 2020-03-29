@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
                             loginSuccess = 1
                     }
                     if (loginSuccess == 1) {
-                        val intent = Intent(this@LoginActivity, CariTumpanganActivity::class.java)
+                        val intent = Intent(this@LoginActivity, BeriTumpanganActivity::class.java)
                         // start your next activity
                         startActivity(intent)
                         //ini tulisan ga guna sekaoi

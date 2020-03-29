@@ -15,9 +15,6 @@
             android:label="@string/title_activity_beri_tumpangan"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".CariTumpanganActivity" />
-        <activity android:name=".SignupKendaraanActivity" />
-        <activity android:name=".SignupProfileActivity" />
-        <activity android:name=".SignupConActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
