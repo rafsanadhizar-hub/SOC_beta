@@ -1,121 +1,324 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2A2E43"
+    android:orientation="vertical"
     tools:context=".SignupActivity">
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginBottom="50dp"
-        android:background="#01111111"
-        android:text="Sign In"
-        android:textColor="#ffff"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="52dp"
-        android:background="#665EFF"
-        android:text="Sign Up"
-        android:textColor="#ffff"
-        app:layout_constraintBottom_toTopOf="@+id/inputNama"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/inputNama"
-        android:layout_width="349dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name"
-        android:textColorHint="#ffff"
-        android:textColor="#ffff"
-        app:layout_constraintBottom_toTopOf="@+id/inputEmail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+            <EditText
+                android:id="@+id/inputNama"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Nama"
+                android:inputType="textPersonName"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
 
-    <EditText
-        android:id="@+id/inputEmail"
-        android:layout_width="349dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Email"
-        android:textColorHint="#ffff"
-        android:textColor="#ffff"
-        app:layout_constraintBottom_toTopOf="@+id/inputNoHp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNama" />
+            <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputNoHp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputNama" />
 
-    <EditText
-        android:id="@+id/inputNoHp"
-        android:layout_width="349dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="415dp"
-        android:ems="10"
-        android:inputType="phone"
-        android:hint="No Hp"
-        android:textColorHint="#ffff"
-        android:textColor="#ffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+            <EditText
+                android:id="@+id/inputNoHp"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="No Hp"
+                android:inputType="phone"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginBottom="312dp"
-        android:background="#665EFF"
-        android:text="CONTINUE"
-        android:textColor="#ffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNoHp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <EditText
+                android:id="@+id/inputPwSignup"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputKonfPwSignup"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Konfirmasi Password"
+                android:inputType="textPassword|textAutoComplete"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputTempatLahir"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Tempat Lahir"
+                android:inputType="textShortMessage"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputTglLahir"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Tanggal Lahir"
+                android:inputType="date"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputNoKTP"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="NO KTP"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewJenisSIM"
+                android:layout_width="349dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:text="Jenis SIM"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioBtSIMA"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:text="SIM A"
+                android:buttonTint="#ffff"
+                android:textColor="#ffff" />
+
+            <RadioButton
+                android:id="@+id/radioBtSIMB"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:text="SIM B"
+                android:buttonTint="#ffff"
+                android:textColor="#ffff" />
+
+            <EditText
+                android:id="@+id/inputNoSIM"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="NO SIM"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputTglKadaluarsa"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Tanggal Kadaluarsa SIM"
+                android:inputType="date"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewJenisKelamin"
+                android:layout_width="349dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:text="Jenis Kelamin"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioBtPria"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:text="Pria"
+                android:buttonTint="#ffff"
+                android:textColor="#ffff" />
+
+            <RadioButton
+                android:id="@+id/radioBtWanita"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="30dp"
+                android:text="Wanita"
+                android:buttonTint="#ffff"
+                android:textColor="#ffff" />
+
+            <EditText
+                android:id="@+id/inputAlamat"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Alamat Tempat Tinggal"
+                android:inputType="textPostalAddress"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputKodePos"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Kode Pos"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputMerk"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Merk Kendaraan"
+                android:inputType="textEmailAddress"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputPlat"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Plat Nomor Kendaraan"
+                android:inputType="textShortMessage"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/inputKapasitas"
+                android:layout_width="349dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="31dp"
+                android:ems="10"
+                android:hint="Kapasitas Penumpang"
+                android:inputType="number"
+                android:textColor="#ffff"
+                android:textColorHint="#ffff"
+                app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="#665EFF"
+                android:text="CONTINUE"
+                android:textColor="#ffff"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="358dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
