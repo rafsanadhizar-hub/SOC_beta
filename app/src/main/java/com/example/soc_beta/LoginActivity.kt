@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
                         val intent = Intent(this@LoginActivity, CariTumpanganActivity::class.java)
                         // start your next activity
                         startActivity(intent)
-                        //ini tulisan ga guna
+                        //ini tulisan ga guna sekaoi
 
 
                     }
