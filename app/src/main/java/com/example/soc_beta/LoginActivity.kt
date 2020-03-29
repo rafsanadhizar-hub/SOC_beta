@@ -20,6 +20,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Mohon Isi Email Dan Password Terlebih Dahulu", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            //test
 
 
 
