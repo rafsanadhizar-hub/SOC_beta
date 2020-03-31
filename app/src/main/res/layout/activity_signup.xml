@@ -314,6 +314,7 @@
                 android:background="#665EFF"
                 android:text="CONTINUE"
                 android:textColor="#ffff"
+                android:layout_marginTop="50dp"
                 tools:layout_editor_absoluteX="30dp"
                 tools:layout_editor_absoluteY="358dp" />
 

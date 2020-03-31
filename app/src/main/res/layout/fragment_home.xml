@@ -1,19 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F8FB"
+        android:orientation="vertical"
+        tools:context=".SignupActivity">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="349dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:text="LOKASI PENJEMPUTAN" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="349dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="30dp"
+            android:text="LOKASI TUJUAN" />
+
+        <EditText
+            android:id="@+id/inputKursiTersedia"
+            android:layout_width="349dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="31dp"
+            android:ems="10"
+            android:hint="Jumlah Kursi Tersedia"
+            android:inputType="number"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/inputTanggalBerangkat"
+            android:layout_width="349dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="31dp"
+            android:ems="10"
+            android:hint="Tanggal Keberangkatan"
+            android:inputType="date"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/inputWaktuBerangkat"
+            android:layout_width="349dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="31dp"
+            android:ems="10"
+            android:hint="Waktu Keberangkatan"
+            android:inputType="time"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="349dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:background="#3ACCE1"
+            android:text="SUBMIT" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
