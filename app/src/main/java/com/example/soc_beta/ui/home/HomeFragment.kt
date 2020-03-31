@@ -46,18 +46,14 @@ class HomeFragment : Fragment() {
 
     private fun savedata() {
         val kursi = inputKursiTersedia.text.toString()
-        val tanggal = inputTanggalBerangkat.text.toString()
-        val waktu = inputWaktuBerangkat.text.toString()
 
-        val goes = Go(kursi, tanggal, waktu)
+        val goes = Go(kursi)
         val goId = this.ref.push().key.toString()
 
         Log.d("ardi", "sampe sini")
 
         this.ref.child(goId).setValue(goes).addOnCompleteListener {
             inputKursiTersedia.setText("")
-            inputTanggalBerangkat.setText("")
-            inputWaktuBerangkat.setText("")
         }
     }
 }

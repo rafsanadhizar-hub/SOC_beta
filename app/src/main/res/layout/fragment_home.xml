@@ -57,19 +57,24 @@
             android:inputType="number"
             android:textColor="#000" />
 
-        <EditText
+        <DatePicker
             android:id="@+id/inputTanggalBerangkat"
             android:layout_width="349dp"
             android:layout_height="47dp"
             android:layout_marginStart="31dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="31dp"
-            android:ems="10"
-            android:hint="Tanggal Keberangkatan"
-            android:inputType="date"
-            android:textColor="#000" />
+            android:datePickerMode="calendar"
+            android:text="Pick Date" />
 
-        <EditText
+        <TextView
+            android:id="@+id/textTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <TimePicker
             android:id="@+id/inputWaktuBerangkat"
             android:layout_width="349dp"
             android:layout_height="47dp"
@@ -77,9 +82,15 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="31dp"
             android:ems="10"
-            android:hint="Waktu Keberangkatan"
-            android:inputType="time"
-            android:textColor="#000" />
+            android:timePickerMode="clock"
+            android:text="Pick Time"/>
+
+        <TextView
+            android:id="@+id/textWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"/>
 
         <Button
             android:id="@+id/buttonGo"
