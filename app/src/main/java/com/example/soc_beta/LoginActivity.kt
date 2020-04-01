@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.content.Intent
 import android.util.Log
 import android.widget.Toast
+import com.example.soc_beta.ui.home.DateTime
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -33,10 +34,9 @@ class LoginActivity : AppCompatActivity() {
                             loginSuccess = 1
                     }
                     if (loginSuccess == 1) {
-                        val intent = Intent(this@LoginActivity, BeriTumpanganActivity::class.java)
+                        val intent = Intent(this@LoginActivity, DateTime::class.java)
                         // start your next activity
                         startActivity(intent)
-                        //ini tulisan ga guna sekaoi
 
 
                     }

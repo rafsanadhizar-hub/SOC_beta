@@ -56,42 +56,42 @@
             android:hint="Jumlah Kursi Tersedia"
             android:inputType="number"
             android:textColor="#000" />
-
-        <DatePicker
+        <Button
             android:id="@+id/inputTanggalBerangkat"
+            android:text="Pick Date"
             android:layout_width="349dp"
             android:layout_height="47dp"
             android:layout_marginStart="31dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="31dp"
-            android:datePickerMode="calendar"
-            android:text="Pick Date" />
-
+            android:layout_marginEnd="31dp"/>
         <TextView
             android:id="@+id/textTanggal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
+            android:text="Date"
+            android:textSize="18sp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="31dp"
+            android:layout_width="349dp"
+            android:layout_height="20dp"
             android:textAlignment="center"/>
-
-        <TimePicker
+        <Button
             android:id="@+id/inputWaktuBerangkat"
+            android:text="Pick Time"
             android:layout_width="349dp"
             android:layout_height="47dp"
             android:layout_marginStart="31dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="31dp"
-            android:ems="10"
-            android:timePickerMode="clock"
-            android:text="Pick Time"/>
-
+            android:layout_marginEnd="31dp"/>
         <TextView
             android:id="@+id/textWaktu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
+            android:text="Time"
+            android:textSize="18sp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="31dp"
+            android:layout_width="349dp"
+            android:layout_height="20dp"
             android:textAlignment="center"/>
-
         <Button
             android:id="@+id/buttonGo"
             android:layout_width="349dp"
