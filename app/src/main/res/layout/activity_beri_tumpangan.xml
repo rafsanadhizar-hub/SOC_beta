@@ -25,4 +25,6 @@
         app:itemTextColor="@color/colorAccent"
         android:background="@color/colorPrimary"/>
 
+    //buat update
+
 </androidx.drawerlayout.widget.DrawerLayout>
