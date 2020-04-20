@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         android:background="#F7F8FB"
         android:orientation="vertical"
-        tools:context=".SignupActivity">
+        tools:context=".ui.home.DateTime">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,20 +31,38 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/buttonLokasiAwal"
             android:layout_width="349dp"
             android:layout_height="47dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="10dp"
             android:text="LOKASI PENJEMPUTAN" />
-
+        <TextView
+            android:id="@+id/textBerangkat"
+            android:text="Penjemputan"
+            android:textSize="18sp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="31dp"
+            android:layout_width="349dp"
+            android:layout_height="20dp"
+            android:textAlignment="center"/>
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/buttonLokasiAkhir"
             android:layout_width="349dp"
             android:layout_height="47dp"
             android:layout_marginLeft="30dp"
             android:text="LOKASI TUJUAN" />
-
+        <TextView
+            android:id="@+id/textTujuan"
+            android:text="Tujuan"
+            android:textSize="18sp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="31dp"
+            android:layout_width="349dp"
+            android:layout_height="20dp"
+            android:textAlignment="center"/>
         <EditText
             android:id="@+id/inputKursiTersedia"
             android:layout_width="349dp"

@@ -41,11 +41,11 @@ class LoginActivity : AppCompatActivity() {
 
                     }
                     else
-                        Toast.makeText(this@LoginActivity, "Username/Password Salah", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@LoginActivity, "Email/Password Salah", Toast.LENGTH_SHORT).show()
                 }
 
                 override fun onCancelled(databaseError: DatabaseError) {
-                    //Log.d(TAG, databaseError.getMessage()) //Don't ignore errors!
+                    //Log.d(TAG, databaseError.getMessage())
                 }
 
 
@@ -57,31 +57,6 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-
-
-
-
-            //FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password)
-            //.addOnCompleteListener{
-
-            //  if (!it.isSuccessful){ return@addOnCompleteListener
-            //    val intent = Intent (this, MainActivity::class.java)
-            //  startActivity(intent)
-            //}
-            //else
-            //  Toast.makeText(this, "Berhasil Login", Toast.LENGTH_SHORT).show()
-            //val intent = Intent (this, CariTumpanganActivity::class.java)
-            //startActivity(intent)
-            //}
-            //.addOnFailureListener{
-            //Log.d("Main", "Login Gagal: ${it.message}")
-            //Toast.makeText(this, "Email/Password Salah", Toast.LENGTH_SHORT).show()
-            //}
-
-
-            // val intent = Intent(this, CariTumpanganActivity::class.java)
-            // start your next activity
-            // startActivity(intent)
         }
 
         button3.setOnClickListener {

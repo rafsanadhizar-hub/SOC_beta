@@ -7,11 +7,11 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_local_taxi_white"
-            android:title="Beri Tumpangan" />
+            android:title="Cari Tumpangan" />
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_airport_shuttle_black_white"
-            android:title="Cari Tumpangan" />
+            android:title="Beri Tumpangan" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_mail_white"

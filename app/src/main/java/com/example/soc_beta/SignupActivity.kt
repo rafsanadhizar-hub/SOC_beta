@@ -12,7 +12,6 @@ class SignupActivity : AppCompatActivity() {
 
     lateinit var ref: DatabaseReference
     var sudahAda = 0
-    var berapaKali = 0
     var fieldCheck = "email"
     var fieldCheckTxt = "email"
     var email = ""
@@ -106,7 +105,7 @@ class SignupActivity : AppCompatActivity() {
         }
 
         override fun onCancelled(databaseError: DatabaseError) {
-            //Log.d(TAG, databaseError.getMessage()) //Don't ignore errors!
+            //Log.d(TAG, databaseError.getMessage())
         }
     }
 
